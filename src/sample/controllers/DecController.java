@@ -19,4 +19,8 @@ public class DecController {
     @FXML
     private TextField key;
 
+    @FXML
+    private Button ret;
+
 }
+

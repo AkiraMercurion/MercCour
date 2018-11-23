@@ -19,4 +19,7 @@ public class EncController {
     @FXML
     private TextField key;
 
+    @FXML
+    private Button ret;
+
 }
