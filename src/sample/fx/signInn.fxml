@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: BLACK; -fx-border-color: #e5dea5;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.SignInController">
+    <children>
+        <Label id="labwel" layoutX="25.0" layoutY="31.0" prefHeight="60.0" prefWidth="551.0" text="WELCOME TO VIGINER`S CIPHER" textFill="#ffeded">
+            <font>
+                <Font name="Monotype Corsiva" size="36.0" />
+            </font>
+        </Label>
+        <PasswordField id="pass" fx:id="pass" layoutX="362.0" layoutY="258.0" prefHeight="25.0" prefWidth="149.0" />
+        <Label id="labpass" fx:id="labpass" layoutX="362.0" layoutY="220.0" prefHeight="29.0" prefWidth="97.0" text="Password" textFill="#c9bad9">
+            <font>
+                <Font name="Lucida Console" size="18.0" />
+            </font>
+        </Label>
+        <Label id="lablog" layoutX="39.0" layoutY="215.0" prefHeight="40.0" prefWidth="82.0" text="Login" textFill="#c9bad9">
+            <font>
+                <Font name="Lucida Console" size="18.0" />
+            </font>
+        </Label>
+        <TextField id="log" fx:id="login" layoutX="39.0" layoutY="258.0" />
+        <Button id="signIn" fx:id="signIn" layoutX="253.0" layoutY="310.0" mnemonicParsing="false" style="-fx-background-color: PURPLE;" text="SIGN IN" textFill="#e8e2e2" />
+        <TextField id="log" fx:id="name" layoutX="39.0" layoutY="161.0" />
+        <TextField id="log" fx:id="surname" layoutX="362.0" layoutY="161.0" />
+        <Label layoutX="39.0" layoutY="134.0" text="Name" textFill="#c9bad9">
+            <font>
+                <Font name="Lucida Console" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="362.0" layoutY="134.0" text="Surname" textFill="#c9bad9">
+            <font>
+                <Font name="Lucida Console" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
