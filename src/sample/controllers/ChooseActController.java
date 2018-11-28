@@ -1,8 +1,11 @@
 
-    package sample.controllers;
+package sample.controllers;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
+import sample.Main;
+
     public class ChooseActController {
 
         @FXML
@@ -10,7 +13,11 @@ import javafx.scene.control.Button;
 
         @FXML
         void setDecrypt(){
-            decrypt.setOnAction(event -> {});
+            decrypt.setOnAction(event -> {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("fx/dec.fxml"));
+
+            });
+
         }
 
         @FXML
@@ -18,7 +25,8 @@ import javafx.scene.control.Button;
 
         @FXML
         void setEncrypt(){
-            encrypt.setOnAction(event -> {});
+            encrypt.setOnAction(event -> { FXMLLoader loader = new FXMLLoader(getClass().getResource("fx/enc.fxml"));
+                });
         }
 
         @FXML
