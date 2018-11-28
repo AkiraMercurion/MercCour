@@ -11,6 +11,11 @@ public class DecController {
     private Button decrypt;
 
     @FXML
+    void setDecrypt(){
+        decrypt.setOnAction(event -> {});
+    }
+
+    @FXML
     private TextArea cipher;
 
     @FXML
@@ -18,9 +23,18 @@ public class DecController {
 
     @FXML
     private TextField key;
+    @FXML
+    void setKey(){
+        key.setOnAction(event -> {});
+    }
 
     @FXML
     private Button ret;
+
+    @FXML
+    void setRet(){
+        ret.setOnAction(event -> {});
+    }
 
 
 

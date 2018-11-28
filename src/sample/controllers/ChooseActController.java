@@ -9,7 +9,17 @@ import javafx.scene.control.Button;
         private Button decrypt;
 
         @FXML
+        void setDecrypt(){
+            decrypt.setOnAction(event -> {});
+        }
+
+        @FXML
         private Button encrypt;
+
+        @FXML
+        void setEncrypt(){
+            encrypt.setOnAction(event -> {});
+        }
 
         @FXML
         void init(){}
