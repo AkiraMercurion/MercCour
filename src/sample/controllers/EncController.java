@@ -22,4 +22,27 @@ public class EncController {
     @FXML
     private Button ret;
 
+    @FXML
+    void setEncrypt(){
+        encrypt.setOnAction(event -> {});
+    }
+//    @FXML
+//    void setCipher(){
+//        cipher.setOnAction(event -> {});
+//    }
+    @FXML
+    void setKey(){
+    key.setOnAction(event -> {});
+}
+    @FXML
+    void setRet(){
+        ret.setOnAction(event -> {});
+    }
+//    @FXML
+//    void setTruemes(){
+//        truemes.setOnAction(event -> {});
+//    }
+//    @FXML
+//    void init(){}
+
 }

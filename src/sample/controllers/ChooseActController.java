@@ -11,4 +11,7 @@ import javafx.scene.control.Button;
         @FXML
         private Button encrypt;
 
+        @FXML
+        void init(){}
+
     }

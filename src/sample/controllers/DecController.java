@@ -22,5 +22,10 @@ public class DecController {
     @FXML
     private Button ret;
 
+
+
+    @FXML
+    void init(){}
+
 }
 

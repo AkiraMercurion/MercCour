@@ -12,9 +12,6 @@ public class SignInController {
     private PasswordField pass;
 
     @FXML
-    private Label labpass;
-
-    @FXML
     private TextField login;
 
     @FXML
@@ -25,6 +22,27 @@ public class SignInController {
 
     @FXML
     private TextField surname;
+
+    @FXML
+    void setPass(){
+        pass.setOnAction(event -> {});
+    }
+    @FXML
+    void setLogin(){
+        login.setOnAction(event -> {});
+    }
+    @FXML
+    void setButton(){
+        signIn.setOnAction(event -> {});
+    }
+    @FXML
+    void setName(){
+        name.setOnAction(event -> {});
+    }
+    @FXML
+    void setSurname(){
+        surname.setOnAction(event -> {});
+    }
 
 }
 

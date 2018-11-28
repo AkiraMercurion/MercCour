@@ -16,9 +16,6 @@ public class SignUpController {
     private PasswordField pass;
 
     @FXML
-    private Label labpass;
-
-    @FXML
     private TextField login;
 
     @FXML
@@ -27,19 +24,21 @@ public class SignUpController {
     @FXML
     private Button signIn;
 
-
     @FXML
-    public void init(){
-// signUp.setOnAction(event -> { Parent root = FXMLLoader.(getClass().getResource("fx/signUp.fxml")) ;
-
-
-
+    void setPass() {
+        pass.setOnAction(event -> {
+        });
     }
-
-    public void signUp(ActionEvent actionEvent) {
-
+    @FXML
+    void setLogin(){
+        login.setOnAction(event -> {});
     }
-
-    public void signIn(ActionEvent actionEvent) {
+    @FXML
+    void setButUp(){
+        signUp.setOnAction(event -> {});
+    }
+    @FXML
+    void setButIn(){
+        pass.setOnAction(event -> {});
     }
 }
