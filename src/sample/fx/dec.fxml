@@ -32,6 +32,6 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Button fx:id="ret" layoutX="512.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-color: #b046da;" text="RETURN" textFill="#e1c9eb" />
+      <Button fx:id="ret" onAction="#ClickOnRet" layoutX="512.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-color: #b046da;" text="RETURN" textFill="#e1c9eb" />
     </children>
 </AnchorPane>

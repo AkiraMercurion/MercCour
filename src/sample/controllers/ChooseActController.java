@@ -15,6 +15,8 @@ import sample.Main;
         @FXML
         private Button dec;
 
+        @FXML
+        private Button ret;
 
         @FXML
         private Button enc;
@@ -52,5 +54,21 @@ import sample.Main;
                 Stage stage = (Stage) enc.getScene().getWindow();
                 stage.close();
 
+        }
+
+        public void ClickOnRet(ActionEvent actionEvent) {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../fx/signUp.fxml"));
+
+            try {
+                Parent root6 = fxmlLoader.load();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root6));
+                stage.show();
+            } catch(Exception e) {
+                e.printStackTrace();
+            }
+
+            Stage stage = (Stage) enc.getScene().getWindow();
+            stage.close();
         }
     }

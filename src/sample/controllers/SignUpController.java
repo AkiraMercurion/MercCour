@@ -12,9 +12,6 @@ import javafx.stage.Stage;
 
 
 
-//import static com.sun.javafx.scene.control.skin.Utils.getResource;
-
-
 public class SignUpController {
 
     @FXML
@@ -29,23 +26,6 @@ public class SignUpController {
     @FXML
     private Button signIn;
 
-//    @FXML
-//    void setPass() {
-//        pass.setOnAction(event -> {
-//        });
-//    }
-//    @FXML
-//    void setLogin(){
-//        login.setOnAction(event -> {});
-//    }
-//    @FXML
-//    void setButUp(){
-//        signUp.setOnAction(event -> {});
-//    }
-//    @FXML
-//    void setButIn(){
-//        pass.setOnAction(event -> {});
-//    }
 
     public void onClickSignIn(ActionEvent actionEvent) {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../fx/signInn.fxml"));
@@ -62,6 +42,8 @@ public class SignUpController {
         Stage stage = (Stage) signIn.getScene().getWindow();
         stage.close();
     }
+
+
     public void onClickSignUp(ActionEvent actionEvent) {
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../fx/chooseAct.fxml"));

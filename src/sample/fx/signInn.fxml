@@ -26,7 +26,7 @@
             </font>
         </Label>
         <TextField id="log" fx:id="login" layoutX="39.0" layoutY="258.0" />
-        <Button id="signIn" onAction="#onClickSignInn" fx:id="signIn" layoutX="253.0" layoutY="310.0" mnemonicParsing="false" style="-fx-background-color: PURPLE;" text="SIGN IN" textFill="#e8e2e2" />
+        <Button id="signIn" fx:id="signIn" layoutX="253.0" layoutY="310.0" mnemonicParsing="false" onAction="#onClickSignInn" style="-fx-background-color: PURPLE;" text="SIGN IN" textFill="#e8e2e2" />
         <TextField id="log" fx:id="name" layoutX="39.0" layoutY="161.0" />
         <TextField id="log" fx:id="surname" layoutX="362.0" layoutY="161.0" />
         <Label layoutX="39.0" layoutY="134.0" text="Name" textFill="#c9bad9">
@@ -39,5 +39,6 @@
                 <Font name="Lucida Console" size="18.0" />
             </font>
         </Label>
+      <Button  fx:id="ret" layoutX="253.0" layoutY="349.0" mnemonicParsing="false" onAction="#onClickRet" style="-fx-background-color: PURPLE;" text="RETURN" textFill="#e8e2e2" />
     </children>
 </AnchorPane>
