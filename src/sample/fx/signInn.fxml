@@ -39,6 +39,6 @@
                 <Font name="Lucida Console" size="18.0" />
             </font>
         </Label>
-      <Button  fx:id="ret" layoutX="253.0" layoutY="349.0" mnemonicParsing="false" onAction="#onClickRet" style="-fx-background-color: PURPLE;" text="RETURN" textFill="#e8e2e2" />
+      <Button fx:id="ret" layoutX="253.0" layoutY="349.0" mnemonicParsing="false" onAction="#onClickRet" style="-fx-background-color: PURPLE;" text="RETURN" textFill="#e8e2e2" />
     </children>
 </AnchorPane>

@@ -61,6 +61,20 @@ public class SignInController {
 
         Stage stage = (Stage) ret.getScene().getWindow();
         stage.close();
+
+        String passs;
+        passs = pass.getText();
+
+        String log;
+        log = login.getText();
+
+        String namee;
+        namee = name.getText();
+
+        String srname;
+        srname = surname.getText();
+
+        //прописать пас, лог, имя, фамилия
     }
 
 

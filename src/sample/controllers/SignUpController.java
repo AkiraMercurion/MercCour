@@ -41,6 +41,7 @@ public class SignUpController {
 
         Stage stage = (Stage) signIn.getScene().getWindow();
         stage.close();
+
     }
 
 
@@ -49,9 +50,9 @@ public class SignUpController {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../fx/chooseAct.fxml"));
 
         try {
-            Parent root1 = fxmlLoader.load();
+            Parent root = fxmlLoader.load();
             Stage stage = new Stage();
-            stage.setScene(new Scene(root1));
+            stage.setScene(new Scene(root));
             stage.show();
         } catch(Exception e) {
             e.printStackTrace();
@@ -59,5 +60,12 @@ public class SignUpController {
 
         Stage stage = (Stage) signUp.getScene().getWindow();
         stage.close();
+
+        String log;
+        log = login.getText();
+
+        String passs;
+        passs = pass.getText();
+        //прописать логин и пас
     }
 }
