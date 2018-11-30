@@ -47,6 +47,21 @@ public class SignUpController {
 //        pass.setOnAction(event -> {});
 //    }
 
+    public void onClickSignIn(ActionEvent actionEvent) {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../fx/signInn.fxml"));
+
+        try {
+            Parent root2 = fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root2));
+            stage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+
+        Stage stage = (Stage) signIn.getScene().getWindow();
+        stage.close();
+    }
     public void onClickSignUp(ActionEvent actionEvent) {
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../fx/chooseAct.fxml"));

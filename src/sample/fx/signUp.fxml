@@ -27,7 +27,7 @@
       </Label>
       <TextField id="log" fx:id="login" layoutX="61.0" layoutY="216.0" />
       <Button id="signUp" onAction="#onClickSignUp" fx:id="signUp" layoutX="202.0" layoutY="314.0" mnemonicParsing="false" style="-fx-background-color: PURPLE;" text="SIGN UP" textFill="#e8e2e2" />
-      <Button id="signIn" fx:id="signIn" layoutX="323.0" layoutY="314.0" mnemonicParsing="false" style="-fx-background-color: PURPLE;" text="SIGN IN" textFill="#e8e2e2" />
+      <Button id="signIn" onAction="#onClickSignIn" fx:id="signIn" layoutX="323.0" layoutY="314.0" mnemonicParsing="false" style="-fx-background-color: PURPLE;" text="SIGN IN" textFill="#e8e2e2" />
       <Label id="labor" layoutX="283.0" layoutY="318.0" text="OR" textFill="#f8f5f5" />
    </children>
 </AnchorPane>

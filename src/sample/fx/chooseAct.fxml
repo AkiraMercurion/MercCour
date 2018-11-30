@@ -5,15 +5,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: BLACK; -fx-border-color: #e5dea5;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ChooseActController">
+<AnchorPane id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: BLACK; -fx-border-color: #e5dea5;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ChooseActController">
     <children>
         <Label id="labwel" layoutX="136.0" layoutY="39.0" prefHeight="60.0" prefWidth="446.0" text="Choose what you want:" textAlignment="CENTER" textFill="#ffeded">
             <font>
                 <Font name="Monotype Corsiva" size="36.0" />
             </font>
         </Label>
-        <Button id="signUp" fx:id="decrypt" layoutX="136.0" layoutY="180.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="98.0" style="-fx-background-color: PURPLE;" text="DECRYPT" textFill="#e8e2e2" />
-        <Button id="signIn" fx:id="encrypt" layoutX="336.0" layoutY="180.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="106.0" style="-fx-background-color: PURPLE;" text="ENCRYPT" textFill="#e8e2e2" />
+        <Button fx:id="decrypt" onAction="#ClickOnDec" layoutX="136.0" layoutY="180.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="98.0" style="-fx-background-color: PURPLE;" text="DECRYPT" textFill="#e8e2e2" />
+        <Button fx:id="encrypt" onAction="#ClickOnEnc" layoutX="336.0" layoutY="180.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="106.0" style="-fx-background-color: PURPLE;" text="ENCRYPT" textFill="#e8e2e2" />
         <Label id="labor" layoutX="276.0" layoutY="192.0" text="OR" textFill="#f8f5f5">
          <font>
             <Font size="18.0" />
