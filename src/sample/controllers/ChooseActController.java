@@ -23,29 +23,30 @@ import sample.Main;
 
 
         public void ClickOnDec(ActionEvent actionEvent) {
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../fx/dec.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../fx/dec.fxml"));
 
-                try {
-                    Parent root5 = fxmlLoader.load();
-                    Stage stage = new Stage();
-                    stage.setScene(new Scene(root5));
-                    stage.show();
-                } catch(Exception e) {
-                    e.printStackTrace();
-                }
-
-                Stage stage = (Stage) dec.getScene().getWindow();
-                stage.close();
+            try {
+                Parent root20 = fxmlLoader.load();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root20));
+                stage.show();
+            } catch(Exception e) {
+                e.printStackTrace();
             }
+
+            Stage stage = (Stage) dec.getScene().getWindow();
+            stage.close();
+        }
+
 
         public void ClickOnEnc(ActionEvent actionEvent) {
 
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../fx/enc.fxml"));
 
                 try {
-                    Parent root6 = fxmlLoader.load();
+                    Parent root1 = fxmlLoader.load();
                     Stage stage = new Stage();
-                    stage.setScene(new Scene(root6));
+                    stage.setScene(new Scene(root1));
                     stage.show();
                 } catch(Exception e) {
                     e.printStackTrace();
@@ -60,15 +61,15 @@ import sample.Main;
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../fx/signUp.fxml"));
 
             try {
-                Parent root6 = fxmlLoader.load();
+                Parent root10 = fxmlLoader.load();
                 Stage stage = new Stage();
-                stage.setScene(new Scene(root6));
+                stage.setScene(new Scene(root10));
                 stage.show();
             } catch(Exception e) {
                 e.printStackTrace();
             }
 
-            Stage stage = (Stage) enc.getScene().getWindow();
+            Stage stage = (Stage) ret.getScene().getWindow();
             stage.close();
         }
     }

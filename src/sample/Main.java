@@ -18,7 +18,7 @@ public class Main extends Application {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        primaryStage.setTitle("Шифр Вижи");
+        primaryStage.setTitle("Шифр Вижинера");
         primaryStage.setScene(new Scene(root, 600, 400
         ));
         primaryStage.show();
