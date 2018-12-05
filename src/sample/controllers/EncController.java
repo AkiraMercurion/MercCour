@@ -55,26 +55,42 @@ public class EncController {
     }
 
     public void ClickOnEnc2(ActionEvent actionEvent) {
-       encrypt.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                cipher.setText(Rad(truemes.getText(), Integer.parseInt(key.getText())));
+//       encrypt.setOnAction(new EventHandler<ActionEvent>() {
+//            @Override
+//            public void handle(ActionEvent event) {
+
+
+                cipher.setText(Rad(truemes.getText(), Integer.valueOf(key.getText())));
+//                truemes.setText("2");
+                key.setText("3");
+//                cipher.setText(Rad(truemes.getText(), Integer.parseInt(key.getText())));
             }
-        });
-    }
-    public String Rad(String text,int keyy){
-//        text = truemes.getText();
-//        keyy = Integer.parseInt(key.getText());
-        String res = "";
-        text.toUpperCase();
-        char[] elem = text.toCharArray();
-        for(int i = 0; i < text.length(); i++){
+//        });
+//    }
+        private String Rad(String text, int keyy){
+        StringBuilder res = new StringBuilder();
+        String textUP = text.toUpperCase();
+            System.out.println(textUP);
+        char[] elem = textUP.toCharArray();
+        boolean b = true;
+        for(int i = 0; i < textUP.length(); i++){
+            b = true;
             for(int j = 0; j < characters.length; j++){
                 if  (elem[i] == characters[j]){
-                    res += characters[j + keyy];
+                    b = false;
+
+                    if (   ((j + keyy) % characters.length) >= 0) {
+                        res.append(characters[j + keyy - characters.length]);
+                    } else {
+                        res.append(characters[j + keyy]);
+                    }
                 }
             }
+            if (b) {
+                res.append(elem[i]);
+                b = true;
+            }
         }
-        return res;
+        return res.toString();
     }
 }
