@@ -1,8 +1,6 @@
 package sample.controllers;
 
 import javafx.event.ActionEvent;
-import javafx.event.Event;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -60,35 +58,60 @@ public class EncController {
 //            public void handle(ActionEvent event) {
 
 
-                cipher.setText(Rad(truemes.getText(), Integer.valueOf(key.getText())));
+                cipher.setText(Decrypt(truemes.getText(), Integer.valueOf(key.getText())));
+
+//                System.out.println( 'А' == 'А'    );
 //                truemes.setText("2");
-                key.setText("3");
-//                cipher.setText(Rad(truemes.getText(), Integer.parseInt(key.getText())));
+//                key.setText("3");
+//                cipher.setText(Encript(truemes.getText(), Integer.parseInt(key.getText())));
             }
 //        });
 //    }
-        private String Rad(String text, int keyy){
+        private String Encript(String text, int keyy){
         StringBuilder res = new StringBuilder();
         String textUP = text.toUpperCase();
-            System.out.println(textUP);
+        System.out.println(textUP);
         char[] elem = textUP.toCharArray();
-        boolean b = true;
+        boolean b;
+        for(int i = 0; i < textUP.length(); i++){
+            b = true;
+            for(int j = 0; j < characters.length; j++){
+                if  (elem[i] == characters[j]){
+                    b = false;
+                    res.append(characters[ (j + keyy) % characters.length  ]);
+                }
+            }
+            if (b) {
+                res.append(elem[i]);
+            }
+        }
+        return res.toString();
+    }
+
+
+    private String Decrypt(String text, int keyy){
+        StringBuilder res = new StringBuilder();
+        String textUP = text.toUpperCase();
+        System.out.println(textUP);
+        char[] elem = textUP.toCharArray();
+        boolean b;
         for(int i = 0; i < textUP.length(); i++){
             b = true;
             for(int j = 0; j < characters.length; j++){
                 if  (elem[i] == characters[j]){
                     b = false;
 
-                    if (   ((j + keyy) % characters.length) >= 0) {
-                        res.append(characters[j + keyy - characters.length]);
-                    } else {
-                        res.append(characters[j + keyy]);
-                    }
+//                    if ( (j - keyy) <= 0 ){
+//                        res.append(characters[  (keyy - j) % characters.length  ]);
+//                    } else {
+
+                        res.append(characters[ characters.length  - 1 -  Math.abs(j - keyy) % characters.length ]);
+//                    }
+
                 }
             }
             if (b) {
                 res.append(elem[i]);
-                b = true;
             }
         }
         return res.toString();
