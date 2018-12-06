@@ -14,14 +14,14 @@
                 <Font name="Monotype Corsiva" size="36.0" />
             </font>
         </Label>
-        <Button id="signUp" fx:id="decrypt" layoutX="251.0" layoutY="271.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="98.0" style="-fx-background-color: PURPLE;" text="DECRYPT" textFill="#e8e2e2" />
+        <Button id="signUp" onAction="#ClickOnDec2" fx:id="decrypt" layoutX="251.0" layoutY="271.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="98.0" style="-fx-background-color: PURPLE;" text="DECRYPT" textFill="#e8e2e2" />
         <Label id="labor" layoutX="271.0" layoutY="114.0" text="KEY" textFill="#f8f5f5">
             <font>
                 <Font size="18.0" />
             </font></Label>
       <TextArea fx:id="cipher" layoutX="24.0" layoutY="226.0" prefHeight="131.0" prefWidth="200.0" />
       <TextArea fx:id="truemes" layoutX="372.0" layoutY="226.0" prefHeight="131.0" prefWidth="200.0" />
-      <TextField fx:id="key" layoutX="211.0" layoutY="148.0" />
+      <TextField fx:id="key2" layoutX="211.0" layoutY="148.0" />
       <Label id="labor" layoutX="95.0" layoutY="187.0" text="CIPHER" textFill="#f8f5f5">
          <font>
             <Font size="18.0" />
